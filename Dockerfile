@@ -88,7 +88,8 @@ RUN \
     requests \
     requests_oauthlib \
     typing-extensions \
-    unidecode && \
+    unidecode \
+    git+https://github.com/edgars-supe/beets-importreplace.git && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
   apk del --purge \
